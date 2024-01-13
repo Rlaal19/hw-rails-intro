@@ -2,6 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.6.6'
 
+gem 'execjs'
+gem 'therubyrhino'
+gem 'rake'
+# gem 'nodejs'
+# gem 'therubyracer'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11'
 
@@ -36,7 +42,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 end
 
-group :production do
-  gem 'pg', '~> 0.21' # for Heroku deployment
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'pg', '~> 0.21' # for Heroku deployment
+#   gem 'rails_12factor'
+# end
