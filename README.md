@@ -4,7 +4,7 @@ This app is associated with the [online
 course](http://www.saas-class.org) and free
 [textbook](http://www.saasbook.info) Engineering Software as a Service.
 สิ่งที่ทำเพิ่มไป
-1. add adtention in gemfile 
+1. add extention in gemfile 
 2. make database โดยใช้คำสั่ง -> rake db:migrate
    
 ขั้นตอนในการใช้งาน
