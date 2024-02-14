@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
   root 'movies#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  # get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -15,6 +16,10 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :movies
+  resources :reviews, only: [:new, :create, :show]
+  resources :reviews, only: [:index]
+  resources :reviews
+
   
   # Example resource route with options:
   #   resources :products do

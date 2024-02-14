@@ -1,0 +1,15 @@
+<!-- reviews/index.html.erb -->
+<h1>All Reviews</h1>
+<%= link_to 'New Review', new_review_path(movie_title: params[:movie_title]), class: 'btn btn-primary col-2 mr-2' %>
+<%= link_to 'Back to movie list', movies_path, class: 'btn btn-primary col-2 mr-2' %>
+<h1></h1>
+<ul>
+  <% @reviews.each do |review| %>
+    <li>
+      <strong>Movie Title:</strong> <%= review.movie_title %><br>
+      <strong>Rating:</strong> <%= review.rating %><br>
+      <strong>Comment:</strong> <%= review.comment %>
+    </li>
+  <% end %>
+</ul>
+

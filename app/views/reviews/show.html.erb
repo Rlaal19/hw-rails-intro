@@ -1,0 +1,8 @@
+<!-- app/views/reviews/show.html.erb -->
+
+<h1>Review Details</h1>
+<p><strong>Movie Title:</strong> <%= @review.movie_title %></p>
+<p><strong>Rating:</strong> <%= @review.rating %></p>
+<p><strong>Comment:</strong> <%= @review.comment %></p>
+
+<%= link_to 'Back to reviews', reviews_path(movie_title: @review.movie_title), :class => 'btn btn-primary col-2' %>
