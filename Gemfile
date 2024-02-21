@@ -46,3 +46,8 @@ end
 #   gem 'pg', '~> 0.21' # for Heroku deployment
 #   gem 'rails_12factor'
 # end
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection", "~> 1.0"
