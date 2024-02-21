@@ -14,7 +14,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if user.present?
       sign_out_all_scopes
       flash[:success] = t 'devise.omniauth_callbacks.success', kind: 'Google'
-      sign_in_and_redirect user, event: :authentication
+      # sign_in_and_redirect user, event: :authentication
+      session[:current_user_id] = user.id # บันทึก user_id ลงใน session
+      redirect_to movies_path, event: :authentication and return
     else
       flash[:alert] =
         t 'devise.omniauth_callbacks.failure', kind: 'Google', reason: "#{auth.info.email} is not authorized."
