@@ -7,6 +7,7 @@
   <% @reviews.each do |review| %>
     <li>
       <strong>Movie Title:</strong> <%= review.movie_title %><br>
+      <strong>User:</strong> <%= review.user %><br>
       <strong>Rating:</strong> <%= review.rating %><br>
       <strong>Comment:</strong> <%= review.comment %>
     </li>

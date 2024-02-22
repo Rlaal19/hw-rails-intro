@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-class DeviseCreateUsers < ActiveRecord::Migration[7.0]
+class DeviseCreateUsers < ActiveRecord::Migration
   def change
     # add_column :users, :provider, :string
     create_table :users do |t|
