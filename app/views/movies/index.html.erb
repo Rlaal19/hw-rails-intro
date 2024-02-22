@@ -3,8 +3,8 @@
     <div class="col-ms-1">
       <%= image_tag(current_user.avatar_url, style: "width: 30px; height: 30px;") %>
     </div>
-    <div class="col-md-2">
-        <p><%= current_user.email %></p>
+    <div class="col-ms-3">
+        <p class="container text-center"><%= current_user.email %></p>
     </div>
     <div class="col">
       <%= button_to "Logout", destroy_user_session_path, data: {turbo: "false"}, method: :delete,class: 'btn btn-danger' %>
