@@ -3,7 +3,7 @@ class CreateReviews < ActiveRecord::Migration
     create_table :reviews do |t|
         t.integer    'potatoes'
         t.text       'comments'
-        # t.references 'moviegoer'
+        # t.references 'user'
         # t.references 'movie'
     end
   end
